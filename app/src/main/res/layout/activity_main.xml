@@ -1,0 +1,24 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <k.anastasia.marineworld.draw.DrawCell
+            android:id="@+id/drawcell_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/drawcell_main_activity"
+            android:text="@string/retry" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
